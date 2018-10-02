@@ -1,5 +1,7 @@
+import { charactersBuilder } from "./components/characters.js";
+
 const initializeApp = () => {
-    console.log('hi, from main dot jay-ess')
+    charactersBuilder();
 };
 
 initializeApp();
