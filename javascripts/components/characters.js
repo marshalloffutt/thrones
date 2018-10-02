@@ -9,7 +9,7 @@ const characters = [
     },
     {
         id: 'character2',
-        name: 'The Blackfish',
+        name: 'Blackfish',
         house: 'Tully',
         imageUrl: 'https://vignette.wikia.nocookie.net/gameofthrones/images/9/93/Blackfish_6x07.png/revision/latest?cb=20160606190707'
     },
@@ -30,7 +30,14 @@ const characters = [
 const charactersBuilder = () => {
     let domString = '';
     characters.forEach((character) => {
-        domString += `<h1>${character.name}</h1>`;
+        domString += `<div class="col-2 character">`;
+        domString +=    `<div class="card">`;
+        domString +=        `<img class="card-img-top img" src="${character.imageUrl}" alt="${character.name}">`;
+        domString +=        `<div class="card-body">`;
+        domString +=            `<h5 class="card-title">${character.name}</h5>`;
+        domString +=        `</div>`;
+        domString +=    `</div>`;
+        domString += `</div>`;
     })
     printToDom(domString)
 };
