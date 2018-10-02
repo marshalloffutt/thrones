@@ -1,13 +1,7 @@
 body {
     background-color: grey;
-}
-
-.character {
+    }
+    
+    .character {
     display: inline-block;
-}
-
-
-.img {
-    height: 189.72px;
-    width: 153px;
-}
+    }
