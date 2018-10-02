@@ -1,4 +1,5 @@
 import {printToDom} from '../helpers/util.js';
+import {detailsBuilder} from './deets.js';
 
 const characters = [
 {
@@ -30,7 +31,7 @@ imageUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEx
 const characterClick = (e) => {
 const characterId = e.target.closest('.character-card').id;
 const currentCharacter = characters.find((x) => x.id === characterId);
-console.log('currentCharacter', currentCharacter);
+detailsBuilder(currentCharacter);
 };
 
 const createEvents = () => {
@@ -44,12 +45,12 @@ const charactersBuilder = () => {
 let domString = '';
 characters.forEach((character) => {
 domString += `<div class="col-2 character character-card" id="${character.id}">`;
-domString += `<div class="card">`;
-domString += `<img class="card-img-top img" src="${character.imageUrl}" alt="${character.name}">`;
-domString += `<div class="card-body">`;
-domString += `<h5 class="card-title">${character.name}</h5>`;
-domString += `</div>`;
-domString += `</div>`;
+domString +=    `<div class="card">`;
+domString +=        `<img class="card-img-top img" src="${character.imageUrl}" alt="${character.name}">`;
+domString +=        `<div class="card-body">`;
+domString +=            `<h5 class="card-title">${character.name}</h5>`;
+domString +=        `</div>`;
+domString +=    `</div>`;
 domString += `</div>`;
 })
 printToDom(domString)
