@@ -1,3 +1,13 @@
 body {
     background-color: grey;
 }
+
+.character {
+    display: inline-block;
+}
+
+
+.img {
+    height: 189.72px;
+    width: 153px;
+}
