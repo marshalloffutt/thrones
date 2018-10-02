@@ -1,3 +1,5 @@
+import {printToDom} from '../helpers/util.js';
+
 const characters = [
     {
         id: 'character1',
@@ -19,10 +21,18 @@ const characters = [
     },
     {
         id: 'character4',
-        name: 'Shireen',
-        house: 'Baratheon',
-        imageUrl: 'https://c1.staticflickr.com/5/4117/4803774853_3dc06fd0fc_b.jpg'
+        name: 'Bronn',
+        house: 'cannot read house of null',
+        imageUrl: 'http://vignette2.wikia.nocookie.net/gameofthrones/images/a/ab/Bronn_of_the_Blackwater_S5.jpg/revision/latest?cb=20150422210515'
     }
 ];
 
-console.log(characters);
+const charactersBuilder = () => {
+    let domString = '';
+    characters.forEach((character) => {
+        domString += `<h1>${character.name}</h1>`;
+    })
+    printToDom(domString)
+};
+
+export {charactersBuilder}
