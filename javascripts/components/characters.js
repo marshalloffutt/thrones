@@ -7,6 +7,10 @@ const setCharacters = (newArray) => {
     characters = newArray;
 };
 
+const getCharacterz = () => {
+    return characters;
+};
+
 const characterClick = (e) => {
 const characterId = e.target.closest('.character-card').id;
 const currentCharacter = characters.find((x) => x.id === characterId);
@@ -20,9 +24,9 @@ characterCards[i].addEventListener('click', characterClick);
 }
 };
 
-const charactersBuilder = () => {
+const charactersBuilder = (charactersArray) => {
 let domString = '';
-characters.forEach((character) => {
+charactersArray.forEach((character) => {
 domString += `<div class="col-2 character character-card" id="${character.id}">`;
 domString +=    `<div class="card">`;
 domString +=        `<img class="card-img-top img" src="${character.imageUrl}" alt="${character.name}">`;
@@ -36,5 +40,4 @@ printToDom(domString)
 createEvents();
 };
 
-export {charactersBuilder}
-export {setCharacters}
+export {charactersBuilder, setCharacters, getCharacterz}
