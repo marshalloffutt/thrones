@@ -1,0 +1,64 @@
+{
+    "characters": [
+        {
+            "id": "character1",
+            "name": "Oberyn",
+            "house": "Martell",
+            "imageUrl": "https://memegenerator.net/img/images/300x300/11138748.jpg"
+        },
+        {
+            "id": "character2",
+            "name": "Blackfish",
+            "house": "Tully",
+            "imageUrl": "https://www.earnthenecklace.com/wp-content/uploads/2016/05/Blackfish--300x300.jpg"
+        },
+        {
+            "id": "character3",
+            "name": "Argus Filch",
+            "house": "Frey",
+            "imageUrl": "https://memegenerator.net/img/images/300x300/10417814.jpg"
+        },
+        {
+            "id": "character4",
+            "name": "Bronn",
+            "house": "cannot read house of null",
+            "imageUrl": "https://memegenerator.net/img/images/300x300/15150319/bronn-told-you-so.jpg"
+        },
+        {
+            "id": "character5",
+            "name": "Jamie",
+            "house": "Lannister",
+            "imageUrl": "https://mediaproxy.salon.com/width/300/height/300/https://media.salon.com/2016/05/game_of_thrones_s6_ep6-580x385.jpg"
+        },
+        {
+            "id": "character6",
+            "name": "Robb Stark",
+            "house": "Stark",
+            "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/1/18/RobbStarkCP.jpg/revision/latest?cb=20140824180229"
+        },
+        {
+            "id": "character7",
+            "name": "Tywin",
+            "house": "Lannister",
+            "imageUrl": "http://valar-morghulis.org/images/events/event5.png"
+        },
+        {
+            "id": "character8",
+            "name": "Arya Stark",
+            "house": "Stark",
+            "imageUrl": "https://img.zergnet.com/1932463_300.jpg"
+        },
+        {
+            "id": "character9",
+            "name": "Old Nan",
+            "house": "Stark",
+            "imageUrl": "https://memegenerator.net/img/images/300x300/9936974.jpg"
+        },
+        {
+            "id": "character10",
+            "name": "Hodor",
+            "house": "Hodor",
+            "imageUrl": "https://photos.bandsintown.com/thumb/272523.jpeg"
+        }
+    ]
+}
