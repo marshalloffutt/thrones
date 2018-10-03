@@ -1,7 +1,11 @@
 import {printToDom} from '../helpers/util.js';
 import {detailsBuilder} from './deets.js';
 
-const characters = [];
+let characters = [];
+
+const setCharacters = (newArray) => {
+    characters = newArray;
+};
 
 const characterClick = (e) => {
 const characterId = e.target.closest('.character-card').id;
@@ -33,3 +37,4 @@ createEvents();
 };
 
 export {charactersBuilder}
+export {setCharacters}
