@@ -19,9 +19,27 @@ detailsBuilder(currentCharacter);
 
 const createEvents = () => {
 const characterCards = document.getElementsByClassName('character-card');
-for(let i=0; i<characterCards.length; i++) {
-characterCards[i].addEventListener('click', characterClick);
-}
+    for(let i=0; i<characterCards.length; i++) {
+    characterCards[i].addEventListener('click', characterClick);
+    }
+};
+
+const sortPeople = (e) => {
+    const house = e.target.id;
+    if(house === 'All'){
+        charactersBuilder(characters);
+    } else {
+        const filteredPeeps = characters.filter(x => x.house === house);
+        charactersBuilder(filteredPeeps);
+    }
+    console.log('you hit a sort', e.target.id);
+};
+
+const sortEvents = () => {
+    const allButton = document.getElementById('All');
+    const starkButton = document.getElementById('Stark');
+    allButton.addEventListener('click', sortPeople);
+    starkButton.addEventListener('click', sortPeople);
 };
 
 const charactersBuilder = (charactersArray) => {
@@ -40,4 +58,4 @@ printToDom(domString)
 createEvents();
 };
 
-export {charactersBuilder, setCharacters, getCharacterz}
+export {charactersBuilder, setCharacters, getCharacterz, sortEvents}
