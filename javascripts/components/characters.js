@@ -45,7 +45,7 @@ const sortEvents = () => {
 const charactersBuilder = (charactersArray) => {
 let domString = '';
 charactersArray.forEach((character) => {
-domString += `<div class="col-2 character character-card" id="${character.id}">`;
+domString += `<div class="col-2 character character-card mb-3" id="${character.id}">`;
 domString +=    `<div class="card">`;
 domString +=        `<img class="card-img-top img" src="${character.imageUrl}" alt="${character.name}">`;
 domString +=        `<div class="card-body">`;
