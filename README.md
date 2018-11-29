@@ -1,7 +1,7 @@
 # Thrones
 
 ## Description
-This app simply displays a small collection of cards based on Game of Thrones characters. The user as the option to filter the cards by characters associated with House Stark. The user can also click on an individual card to open an enlarged profile for that specific character.
+This app displays a small collection of Bootstrap cards based on popular Game of Thrones characters. The user has the option to filter characters associated with House Stark. The user can also click on an individual card to open an enlarged profile for that specific character.
 
 This was an in-class code-along excercise that exposed us to modular javascript, and introduced us to JSON, get method, 'this', filtering, and XMLHttpRequests to bring in data from JSON.
 
