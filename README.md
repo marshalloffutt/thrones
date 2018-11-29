@@ -1,10 +1,13 @@
 # Thrones
 
-A collection of cards for our favorite Game of Thrones characters. This in-class exercise exposed us to modular javascript, and introduced us to JSON, get method, 'this', filtering, and XMLHttpRequests to bring in data from JSON.
+This app simply displays a small collection of cards based on Game of Thrones characters. The user as the option to filter the cards by characters associated with House Stark. The user can also click on an individual card to open an enlarged profile for that specific character.
+
+This was an in-class code-along excercise that exposed us to modular javascript, and introduced us to JSON, get method, 'this', filtering, and XMLHttpRequests to bring in data from JSON.
 
 ## Screenshots
 ![main screen shot](./screenshots/thrones1.png)
 ![next screen shot](./screenshots/thrones2.png)
+![final screen shot](./screenshots/thrones3.png)
 
 ## How to run this project
 * Use npm to install http-server in your terminal:
@@ -19,5 +22,3 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-* Click the Stark button at the top of the page to filter out characters who are not affiliated with house Stark.
-* Click the all button to show all people.
